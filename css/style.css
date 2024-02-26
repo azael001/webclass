@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 :root {
 --primary-bright-red:hsl(12, 88%, 59%);
---primary-dark-blue:(228, 39%, 23%);
---neutral-dark-grayish-blue:(227, 12%, 61%);
---neutral-dark-blue:(233, 12%, 13%);
---neutral-pale-red:(13, 100%, 96%);
---neutral-light-gray:(0, 0%, 98%);
+--primary-dark-blue:hsl(228, 39%, 23%);
+--neutral-dark-grayish-blue:hsl(227, 12%, 61%);
+--neutral-dark-blue:hsl(233, 12%, 13%);
+--neutral-pale-red:hsl(13, 100%, 96%);
+--neutral-light-gray:hsl(0, 0%, 98%);
 }
 
 
@@ -92,4 +92,65 @@ max-width: 1100px;
 }
 .main-image img {
     width: 100%;
+}
+/*about */
+.about{
+    margin-left:20px;
+    margin-right: 20px;
+}
+.about-head{
+    text-align:center;
+    margin-bottom: 4rem;
+    
+}
+
+ .about-list h3{
+    background-color: var(--neutral-pale-red);
+    padding:5px 3px;
+   
+}
+.number {
+    padding: 8px 15px;
+    background-color: var(--primary-bright-red);
+    color: var(--neutral-light-gray);
+    border-radius: 40%; 
+    margin-right: 15px;
+}
+/*testimonials*/
+
+.testimonials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 50px;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width:90%;
+    border-radius: 5px;
+    text-align:center;
+    background-color: var(--neutral-light-gray);
+    max-width: 500px;
+    padding-top:60px;
+    display:none;
+}
+.card.active-card{
+    display:flex;
+}
+.dot{
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    border:2px solid var(--primary-bright-red);
+    display: inline-block;
+    margin: 20px 0px 45px;
+}
+.active,
+.dot:hover{
+    background-color: var(--primary-bright-red);
 }
