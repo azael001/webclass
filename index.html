@@ -17,6 +17,11 @@
 </head>
 <body>
 <header>
+  <div class="background-container">
+    <div class="bg-pattern bg1"></div>
+    <div class="bg-pattern bg2"></div>
+
+  </div>
   <nav>
     <div class="nav-container">
       <div class="logo">
@@ -33,7 +38,7 @@
         </svg>
 
       </div>
-        <div class="menu">
+        <div class="menu" id="menu">
           <ul>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Product</a></li>
@@ -43,8 +48,8 @@
           </ul>
         </div> 
         <a href="#"  class="btn btn-nav">Get Started</a>
-        <button class="toggle">
-          <img src="./images/icon-hamburger.svg" alt="">
+        <button class="toggle" id="toggle">
+          <img id="toggle-icon"src="./images/icon-hamburger.svg" alt="">
         </button>
     </div> 
   </nav>
@@ -105,7 +110,7 @@
   <section class="testimonials">
     <h2>What they’ve said</h2>
       <div class="slider">
-        <div class="card active-card">
+        <div class="card ">
           <img src=".//images/avatar-anisha.png" alt="">
           <h3>Anisha Li</h3>
           <p>“Manage has supercharged our team’s workflow. The ability to maintain 
@@ -133,10 +138,10 @@
       </div> <!--fin del slider-->
       <!--dots-->
       <div class="dots">
+        <span class="dot" onclick="currentCard(0)"></span> <!--todo-->
         <span class="dot" onclick="currentCard(1)"></span> <!--todo-->
         <span class="dot" onclick="currentCard(2)"></span> <!--todo-->
         <span class="dot" onclick="currentCard(3)"></span> <!--todo-->
-        <span class="dot" onclick="currentCard(4)"></span> <!--todo-->
       </div>
 
       <a href="#" class="btn">Get Started</a>  
@@ -162,6 +167,6 @@
 
   Copyright 2020. All Rights Reserved
 </footer>
-<script src="script"></script>
+<script src="script.js"></script>
 </body>
 </html>

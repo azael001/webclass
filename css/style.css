@@ -46,7 +46,36 @@ p {
     color:var(--neutral-dark-grayish-blue);
     line-height:2.5rem;
 }
+.background-container{
+    position:absolute;
+    height: 2000px;
+    overflow: hidden;
+    margin: 0 auto;
+    top: 0 ;
+    left: 0;
+    right:0;
+}
+.bg-pattern{
+    position: absolute;
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center top;
+    z-index: -1;
+}
+.bg1{
+    width: 450px;
+    height:450px;
+    transform: translateX(500px) translateY(-130px);
+
+}
+.bg2{
+    width: 450px;
+    height: 450px;
+  
+}
 /*botones*/
+
 .btn{
     background-color: var(--primary-bright-red);
     color: var(--neutral-light-gray);
@@ -65,6 +94,7 @@ p {
 /*header*/
 .menu{
     display:none;
+
 }
 .nav-container {
 display: flex; /*poner uno al ladodel otro */
@@ -72,6 +102,21 @@ justify-content: space-between;
 width:95%;
 margin: 40px auto ; /*con auto te lo deja centrado mirar */
 max-width: 1100px;
+}
+@media (min-width:1100px){
+    .menu{
+        display:flex;
+        align-items: center;
+        position: relative;
+    }
+    .nav-container {
+    display: flex; /*poner uno al ladodel otro */
+    justify-content: space-between;
+    width:95%;
+    margin: 40px auto ; /*con auto te lo deja centrado mirar */
+    max-width: 1100px;
+    }
+
 }
 /* main */
 .main-container {
@@ -130,7 +175,7 @@ max-width: 1100px;
     align-items: center;
     justify-content: center;
 }
-.card {
+.card{
     width:90%;
     border-radius: 5px;
     text-align:center;
